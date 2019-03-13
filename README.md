@@ -1,4 +1,4 @@
-# Dailybot Ping Bot
+# XergioAleX Twitter Bot
 ---
 
 This script allow test DailyBot bot availability.

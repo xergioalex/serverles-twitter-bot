@@ -1,6 +1,6 @@
 {
-  "name": "dailybot-ping-bot",
-  "description": "This script allow test DailyBot bot availability.",
+  "name": "xergioalex-twitter-bot",
+  "description": "An experimental tweet bot for learning purposes.",
   "version": "1.0.0",
   "files": [
     "dist"
@@ -9,7 +9,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/rocka/dailybot-ping-bot"
+    "url": "https://github.com/xergioalex/serverles-twitter-bot.git"
   },
   "dependencies": {
     "minimal-request-promise": "^1.5.0",
