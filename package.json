@@ -26,7 +26,6 @@
     "babel-preset-es2015": "6.24.1",
     "babel-preset-stage-2": "6.24.1",
     "babel-register": "6.26.0",
-    "babel-runtime": "6.26.0",
     "clean-webpack-plugin": "0.1.19",
     "source-map-loader": "0.2.3",
     "uglifyjs-webpack-plugin": "1.2.7",
