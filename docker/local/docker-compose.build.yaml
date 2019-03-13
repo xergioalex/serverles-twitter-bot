@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  claudia:
+    image: node:8.11.3-alpine
+    working_dir: /home/node/app
+    volumes:
+      - ../../:/home/node/app
+    env_file:
+      - claudia/.env
+    command:
+      - /bin/sh
+      - -c
+      - |
+        sh claudia.config.sh
+        yarn install
+        chown -R ${SERVICE_PERMISSIONS} /home/node/app
+        chown -R root:root /home/node/app/dist
+        yarn ${YARN_COMMAND}
+        chown -R ${SERVICE_PERMISSIONS} /home/node/app
+
+
+
+
+
