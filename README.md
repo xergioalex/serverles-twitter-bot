@@ -127,7 +127,6 @@ bash docker.sh create
 - You can update your lambda using: `bash docker.sh update`
 - You can delete your lambda using: `bash docker.sh destroy`
 
-
 Output example
 ```
 {
@@ -144,7 +143,16 @@ Output example
 }
 ```
 
-### 4. Invoke Lambda
+### 4. Schedule lambda events
+
+Then just run following commands:
+```
+cd docker/local
+bash docker.sh schedule
+```
+
+
+### 5. Invoke Lambda
 
 You can invoke your lambda from local using claudia cli:
 ```
@@ -152,7 +160,7 @@ cd docker/local
 bash docker.sh invoke
 ```
 
-### 5. Test Lambda code
+### 6. Test Lambda code
 
 Using mocha you can test your code:
 ```
