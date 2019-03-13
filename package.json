@@ -41,7 +41,7 @@
     "update": "claudia update --use-s3-bucket ${S3_CLAUDA_UPLOADS} --set-env-from-json config/environment.json",
     "schedule": "claudia add-scheduled-event --event config/schedule.json --name ${LAMBDA_EVENT_NAME} --rate '5 minutes'",
     "destroy": "claudia destroy",
-    "test": "claudia test-lambda",
-    "test:local": "npm run build && node test/test.js"
+    "invoke": "claudia test-lambda",
+    "invoke:local": "npm run build && node test/test.js"
   }
 }
