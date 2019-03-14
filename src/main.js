@@ -15,6 +15,8 @@ const lambdaFunction = async (event, context) => {
         console.log('Something is wrong with Twitter api :(...')
         console.log(err)
       }
+      console.log('------- Result ------')
+      console.log(data)
     })
   } else {
     console.log('Something is woring with chuck norris api :(...')
