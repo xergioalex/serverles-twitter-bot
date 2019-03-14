@@ -29,7 +29,7 @@ elif [[ "$1" != "help" ]]; then
     docker-compose up
 else
     utils.printer "Params between {} are optional"
-    utils.printer "{command} available: build|build:watch|create|update|test|schedule|destroy"
+    utils.printer "{command} available: build|build:watch|create|update|schedule|destroy|invoke|invoke:local"
     utils.printer ""
     utils.printer "Usage: docker.sh [{command}|deploy|help]"
     echo -e "{command} --> Run services with command script"

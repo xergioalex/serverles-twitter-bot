@@ -1,8 +1,9 @@
-# XergioAleX Twitter Bot
+# XergioAleX Twitter Bot [@XergioAleX](https://twitter.com/XergioAleXBot)
 ---
 
-This script allow test DailyBot bot availability.
+Basic example of a twitter bot using a serverless approach and consuming [Chuck norris api](https://api.chucknorris.io/).
 
+![Infrastructure design](infrastructure-design.png)
 
 ## Docker
 
@@ -44,7 +45,7 @@ Files with environment variables `.env` and other config files mentioned below a
 **Notes:**
 
 - Params between {} are optional, except {}*.
-- `{command}` available: build|build:watch|create|update|test|schedule|destroy*.
+- `{command}` available: build|build:watch|create|update|schedule|destroy|invoke|invoke:local*.
 - Service names available: `claudia`
 
 The following describes each of the parameters::
@@ -77,7 +78,7 @@ Follow nexts steps to complete all empty var values.
 ### 2. Create IAM user
 
 - Go to IAM: https://console.aws.amazon.com/iam/home?region=us-east-1#/users
-- Recommended name: `{your_username_or_identifier}`_dailybot_rover_serverless
+- Recommended name: `{your_username_or_identifier}`_serverless
 - Create user with existing policies
   - AWSLambdaFullAccess
   - AmazonDynamoDBFullAccess
